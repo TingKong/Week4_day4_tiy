@@ -41,20 +41,42 @@ namespace eventhandler
 
         private void button_Click_1(object sender, RoutedEventArgs e)
         {
-            DoubleAnimation animation = new DoubleAnimation(100, TimeSpan.FromSeconds(1.0));
-            text_animation.BeginAnimation(TextBlock.FontSizeProperty, animation);
+            if (increase_font.Content.ToString() == "increase font")
+            {
+                DoubleAnimation animation = new DoubleAnimation(100, TimeSpan.FromSeconds(1.0));
+                text_animation.BeginAnimation(TextBlock.FontSizeProperty, animation);
+                increase_font.Content = "decrease font";
+            }
+           else if (increase_font.Content.ToString() == "decrease font")
+            {
+                DoubleAnimation animation2 = new DoubleAnimation(48, TimeSpan.FromSeconds(1.0));
+                text_animation.BeginAnimation(TextBlock.FontSizeProperty, animation2);
+                increase_font.Content = "increase font";
 
+            }
         }
 
         private void button_Click_2(object sender, RoutedEventArgs e)
         {
             ThicknessAnimation ThickAnimation = new ThicknessAnimation();
 
-            ThickAnimation.From = new Thickness(0,75,10,0);
-            ThickAnimation.To = new Thickness(0,75,1000,0);
+            ThickAnimation.From = new Thickness(0,75,-300,0);
+            ThickAnimation.To = new Thickness(0,75, 119, 0);
             ThickAnimation.Duration = TimeSpan.FromSeconds(3);
             text_animation.BeginAnimation(TextBlock.MarginProperty, ThickAnimation);
 
+
+        }
+
+     
+
+        private void button_hover1(object sender, MouseEventArgs e)
+        {
+            rotate_text.Opacity = 1;
+        }
+
+        private void text_hover(object sender, MouseEventArgs e)
+        {
 
         }
     }

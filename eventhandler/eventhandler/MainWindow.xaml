@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\Ting\Source\Repos\Week4_day4_tiy\eventhandler\images\bg.jpg"/>
         </Grid.Background>
-        <Label x:Name="text_animation" Content="Hello World" Height="143" Margin="0,75,418,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="267">
+        <Label x:Name="text_animation" Content="Hello World" Height="143" Margin="0,69,119,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="574" Background="{x:Null}" MouseEnter="text_hover">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -20,7 +20,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button x:Name="rotate_text" Content="rotate text" Margin="0,0,509,141" HorizontalAlignment="Right" Width="179" Height="44" VerticalAlignment="Bottom" Click="button_Click" FontFamily="Leelawadee UI" FontSize="28"/>
+        <Button x:Name="rotate_text" Content="rotate text" Margin="0,0,509,141" HorizontalAlignment="Right" Width="179" Height="44" VerticalAlignment="Bottom" Click="button_Click" FontFamily="Leelawadee UI" FontSize="28" MouseEnter="button_hover1"/>
         <Button x:Name="increase_font" Content="increase font" HorizontalAlignment="Left" Height="44" Margin="291,222,0,0" VerticalAlignment="Top" Width="186" Click="button_Click_1" FontSize="28"/>
         <Button x:Name="move_text" Content="move text" HorizontalAlignment="Left" Height="44" Margin="496,222,0,0" VerticalAlignment="Top" Width="186" Click="button_Click_2" FontSize="28"/>
 
