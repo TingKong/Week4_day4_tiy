@@ -32,13 +32,10 @@ namespace eventhandler
             da.From = 0;
             da.To = 360;
             da.Duration = new Duration(TimeSpan.FromSeconds(3));
-            da.RepeatBehavior = RepeatBehavior.Forever;
             RotateTransform rt = new RotateTransform();
             text_animation.RenderTransform = rt;
             rt.BeginAnimation(RotateTransform.AngleProperty, da);
-            //RotateTransform rt = new RotateTransform();
-            //text_animation.RenderTransform = rt;
-            //rt.BeginAnimation(text_animation);
+
 
         }
 
@@ -46,6 +43,18 @@ namespace eventhandler
         {
             DoubleAnimation animation = new DoubleAnimation(100, TimeSpan.FromSeconds(1.0));
             text_animation.BeginAnimation(TextBlock.FontSizeProperty, animation);
+
+        }
+
+        private void button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ThicknessAnimation ThickAnimation = new ThicknessAnimation();
+
+            ThickAnimation.From = new Thickness(0,75,10,0);
+            ThickAnimation.To = new Thickness(0,75,1000,0);
+            ThickAnimation.Duration = TimeSpan.FromSeconds(3);
+            text_animation.BeginAnimation(TextBlock.MarginProperty, ThickAnimation);
+
 
         }
     }
