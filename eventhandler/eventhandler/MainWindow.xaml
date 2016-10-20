@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\Ting\Source\Repos\Week4_day4_tiy\eventhandler\images\bg.jpg"/>
         </Grid.Background>
-        <Label x:Name="text_animation" Content="Hello World" Height="143" Margin="0,69,119,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="574" Background="{x:Null}" MouseEnter="text_hover">
+        <Label x:Name="text_animation" Content="Hello World" Height="143" Margin="0,94,119,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="574" Background="{x:Null}" MouseEnter="text_hover">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
