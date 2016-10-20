@@ -79,5 +79,17 @@ namespace eventhandler
         {
 
         }
+
+        private void checkBox_Checked(object sender, RoutedEventArgs e)
+        {
+            text_animation.Content = "peace";
+
+        }
+
+        private void peace_unchecked(object sender, RoutedEventArgs e)
+        {
+            text_animation.Content = "Hello World";
+
+        }
     }
 }

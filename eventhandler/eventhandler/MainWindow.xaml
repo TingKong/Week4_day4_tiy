@@ -20,9 +20,38 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button x:Name="rotate_text" Content="rotate text" Margin="0,0,509,141" HorizontalAlignment="Right" Width="179" Height="44" VerticalAlignment="Bottom" Click="button_Click" FontFamily="Leelawadee UI" FontSize="28" MouseEnter="button_hover1"/>
-        <Button x:Name="increase_font" Content="increase font" HorizontalAlignment="Left" Height="44" Margin="291,222,0,0" VerticalAlignment="Top" Width="186" Click="button_Click_1" FontSize="28"/>
-        <Button x:Name="move_text" Content="move text" HorizontalAlignment="Left" Height="44" Margin="496,222,0,0" VerticalAlignment="Top" Width="186" Click="button_Click_2" FontSize="28"/>
+        <Button x:Name="rotate_text" Content="rotate text" Margin="0,0,509,125" HorizontalAlignment="Right" Width="179" Height="60" VerticalAlignment="Bottom" Click="button_Click" FontFamily="Leelawadee UI" FontSize="28" MouseEnter="button_hover1" OpacityMask="White" BorderBrush="#00707070">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB0DCFF" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="increase_font" Content="increase font" HorizontalAlignment="Left" Height="60" Margin="291,222,0,0" VerticalAlignment="Top" Width="186" Click="button_Click_1" FontSize="28" BorderBrush="#00707070">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FFA6D0F1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="move_text" Content="move text" HorizontalAlignment="Left" Height="60" Margin="496,222,0,0" VerticalAlignment="Top" Width="186" Click="button_Click_2" FontSize="28">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FF9BC2E2"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF36495C" Offset="0"/>
+                    <GradientStop Color="#0096BDDC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <CheckBox x:Name="checkBox" Content="peace" HorizontalAlignment="Left" Margin="599,298,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" Checked="checkBox_Checked" VerticalContentAlignment="Center" Unchecked="peace_unchecked"/>
+        <Label x:Name="label" Content="Change Text by clicking on the checkbox&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="83,291,0,0" FontSize="24" Foreground="White"/>
 
     </Grid>
 </Window>
